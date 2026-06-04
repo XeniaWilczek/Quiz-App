@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quizapp</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <div id="display-question">
+        <div class="answer-container">
+          <button class="button answer" onclick="checkAnswer()"></button>
+          <button class="button answer" onclick="checkAnswer()"></button>
+          <button class="button answer" onclick="checkAnswer()"></button>
+          <button class="button answer" onclick="checkAnswer()"></button>
+        </div>
+      </div>
+      <div class="lower-buttons">
+        <button class="button" onclick="showSolution()">Lösung</button>
+        <button class="button" onclick="showNextQuestion()">Weiter</button>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
