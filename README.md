@@ -2,11 +2,11 @@
 
 ![Vorschau der Quiz-App](./images/previewQuizApp.png)
 
-Das primäre Ziel dieses Projekts ist es zu üben, mit Arrays und Objekten in JavaScript zu arbeiten. Die interaktive Webanwendung wurde mit reinem HTML, CSS und JavaScript umgesetzt. Sie verwaltet Fragen und Antwortoptionen in strukturierten Datenobjekten innerhalb eines Arrays und rendert die Inhalte dynamisch zur Laufzeit im Browser.
+Ziel dieses Projekts ist es, mit Arrays und Objekten in JavaScript zu arbeiten. Die interaktive Webanwendung wurde mit reinem HTML, CSS und JavaScript umgesetzt. Sie verwaltet Fragen und Antwortoptionen in strukturierten Datenobjekten innerhalb eines Arrays und rendert die Inhalte dynamisch zur Laufzeit im Browser.
 
 ## Voraussetzungen
 Für den Betrieb dieses Projekts sind keine komplexen Laufzeitumgebungen, Build-Tools oder Datenbankkonfigurationen erforderlich. Zum Betrachten und Bearbeiten werden lediglich benötigt:
-- Ein aktueller Webbrowser (z. B. Google Chrome, Mozilla Firefox, Microsoft Edge oder Safari).
+- Ein aktueller Webbrowser 
 - Ein Texteditor oder eine IDE (z. B. Visual Studio Code), falls der Quellcode editiert werden soll.
 
 ## Technologien
