@@ -1,6 +1,5 @@
 # **Quiz-App**
 ![Vorschau der Quiz-App](./images/previewQuizApp.png)
-
 Eine interaktive Webanwendung zur Durchführung von Quiz-Fragen. Das primäre Ziel dieses Projekts ist die Demonstration von dynamischer Datenverarbeitung im Frontend mittels JavaScript. Die Kernlogik basiert auf der strukturierten Verwaltung von Fragen, Antwortoptionen und korrekten Lösungen innerhalb von Arrays und Objekten.
 
 ## Voraussetzungen
