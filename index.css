@@ -66,10 +66,13 @@ h1 {
   padding: 20px;
 }
 
-.right {
+/* Kombinierte Klassen überschreiben Grau */
+.button.right {
   background-color: rgb(78, 178, 78);
+  color: white;
 }
 
-.wrong {
+.button.wrong {
   background-color: rgb(155, 36, 35);
+  color: white;
 }

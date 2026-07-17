@@ -2,19 +2,19 @@ let questions = [
   {
     id: "capitalOfGermany",
     title: "Was ist die Hauptstadt von Deutschland?",
-    answer: ["Berlin", "München", "Hamburg", "Köln"],
+    answers: ["Berlin", "München", "Hamburg", "Köln"],
     correctAnswer: "Berlin",
   },
   {
     id: "capitalOfFrance",
     title: "Was ist die Hauptstadt von Frankreich?",
-    answer: ["Toulouse", "Bordeaux", "Lille", "Paris"],
+    answers: ["Toulouse", "Bordeaux", "Lille", "Paris"],
     correctAnswer: "Paris",
   },
   {
     id: "capitalOfSpain",
     title: "Was ist die Hauptstadt von Spanien?",
-    answer: ["Burgos", "Madrid", "Sevilla", "Valencia"],
+    answers: ["Burgos", "Madrid", "Sevilla", "Valencia"],
     correctAnswer: "Madrid",
   },
 ];
@@ -24,9 +24,9 @@ let questionIndex = 0;
 displayQuestion();
 
 function checkAnswer(selectedAnswer) {
+  //zuerst richtige Frage auslesen
   const currentQuestion = questions[questionIndex];
   const selectedButton = document.getElementById(selectedAnswer);
-  console.log(selectedButton);
   if (selectedAnswer === currentQuestion.correctAnswer) {
     selectedButton.classList.add("right");
     alert("Die Antwort ist richtig!");
@@ -38,6 +38,7 @@ function checkAnswer(selectedAnswer) {
 }
 
 function showSolution() {
+  //zuerst richtige Frage auslesen
   const currentQuestion = questions[questionIndex];
   const correctButton = document.getElementById(currentQuestion.correctAnswer);
   if (correctButton) {
@@ -51,7 +52,7 @@ function displayQuestion() {
 
   //Kopie des Antworten-Arrays erstellen, damit das Original nicht verändert wird
   const answerCopy = [];
-  question.answer.forEach((answer) => {
+  question.answers.forEach((answer) => {
     answerCopy.push(answer);
   });
   //neues Array für ausgewählte Antworten
@@ -68,10 +69,10 @@ function displayQuestion() {
   //allPickedAnswers als id eintragen für zufällige Anzeige der Fragen
   const htmlString = `<h1>${question.title}</h1>
         <div class="answer-container">
-          <button id="${allPickedAnswers[0]}" class="button answer" onclick="checkAnswer('${allPickedAnswers[0]}')">${allPickedAnswers[0]}</button>
-          <button id="${allPickedAnswers[1]}" class="button answer" onclick="checkAnswer('${allPickedAnswers[1]}')">${allPickedAnswers[1]}</button>
-          <button id="${allPickedAnswers[2]}" class="button answer" onclick="checkAnswer('${allPickedAnswers[2]}')">${allPickedAnswers[2]}</button>
-          <button id="${allPickedAnswers[3]}" class="button answer" onclick="checkAnswer('${allPickedAnswers[3]}')">${allPickedAnswers[3]}</button>
+          <button id="${allPickedAnswers[0]}" class="button" onclick="checkAnswer('${allPickedAnswers[0]}')">${allPickedAnswers[0]}</button>
+          <button id="${allPickedAnswers[1]}" class="button" onclick="checkAnswer('${allPickedAnswers[1]}')">${allPickedAnswers[1]}</button>
+          <button id="${allPickedAnswers[2]}" class="button" onclick="checkAnswer('${allPickedAnswers[2]}')">${allPickedAnswers[2]}</button>
+          <button id="${allPickedAnswers[3]}" class="button" onclick="checkAnswer('${allPickedAnswers[3]}')">${allPickedAnswers[3]}</button>
         </div>`;
   //htmlString soll vorige Frage überschreiben
   document.getElementById("display-question").innerHTML = htmlString;
